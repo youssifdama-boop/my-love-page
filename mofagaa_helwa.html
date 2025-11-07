@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>مفاجأة حلوة 💝</title>
+<style>
+  :root{
+    --bg:#fff0f5;
+    --card:#ffe6ef;
+    --accent:#ff6fa5;
+    --accent2:#ff85b3;
+    --muted:#884c6c;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
+    background:linear-gradient(180deg,var(--bg) 0%,#fff 100%);
+    margin:0;
+    padding:28px;
+    color:#442;
+    -webkit-font-smoothing:antialiased;
+  }
+  .container{
+    max-width:920px;
+    margin:18px auto;
+    padding:22px;
+    border-radius:18px;
+    background:var(--card);
+    box-shadow:0 12px 40px rgba(255,100,150,0.18);
+    border:2px solid #ffd1e3;
+  }
+  h1{
+    margin:0 0 8px;
+    font-size:30px;
+    color:var(--accent);
+    text-shadow:1px 1px 4px #fff;
+  }
+  p.lead{margin:0 0 18px;color:var(--muted);font-weight:500;}
+  .message{
+    padding:22px;
+    border-radius:12px;
+    background:linear-gradient(90deg,#fff5f9 0%,#ffe6ef 100%);
+    font-size:20px;
+    margin-bottom:18px;
+    line-height:1.6;
+    color:#3b2336;
+    box-shadow:0 6px 20px rgba(255,105,150,0.12);
+  }
+
+  .player-wrap{
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff0f7;
+    border:1px solid #ffd9e6;
+    box-shadow:0 8px 30px rgba(255,100,150,0.08);
+    min-height:110px;
+  }
+
+  .meta{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-top:14px;
+    flex-wrap:wrap;
+  }
+  .small-note{color:var(--muted);font-size:13px;margin-top:12px;text-align:center}
+  footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+  @media (max-width:720px){
+    .container{padding:16px}
+    .message{font-size:18px;padding:16px}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>مفاجأة حلوة 💝</h1>
+    <p class="lead">صفحة بسيطة مليانة اعتذار وحب — افتحها وابعثها له/لها 💌</p>
+
+    <div class="message" id="message">
+      يروحي انا اسف على كل الي حصل مني قبل كدا وانا عارف اوي اني قصرت ف حقك وزعلتك مني بس الحمد لله عقلت وبقيت رزين و عاوزك وشاريكي وبحبك ينور عيني ❤️❤️ ربنا يخليكي ليا يروح قلبي وميحرمنيش منك ابدا ياارب يحبيبتي وبس كدا بحبكك❤️❤️
+    </div>
+
+    <div class="meta">
+      <!-- Spotify embed -->
+      <div class="player-wrap" style="flex:1;min-width:260px;">
+        <!-- Spotify embed iframe (track) -->
+        <iframe src="https://open.spotify.com/embed/track/26UNapCN9Gu2z4ZdW8sPRj"
+                width="100%" height="120" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+
+    <div class="small-note">
+      ملاحظة: لو عايز تغيّر الرسالة أو تحط اسمك جنبها افتح الملف وحرّر نص داخل عنصر &lt;div id="message"&gt;.
+    </div>
+
+    <footer>صُمم بحب — منك ليها 💗</footer>
+  </div>
+</body>
+</html>
